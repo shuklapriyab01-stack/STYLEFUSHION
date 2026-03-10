@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>AI Fashion Recommender</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>AI Fashion Recommendation System</h1>
+
+<p>Select your preferences</p>
+
+<div class="form">
+
+<label>Gender</label>
+<select id="gender">
+<option value="female">Female</option>
+<option value="male">Male</option>
+</select>
+
+<label>Occasion</label>
+<select id="occasion">
+<option value="party">Party</option>
+<option value="casual">Casual</option>
+<option value="formal">Formal</option>
+</select>
+
+<label>Season</label>
+<select id="season">
+<option value="summer">Summer</option>
+<option value="winter">Winter</option>
+</select>
+
+<button onclick="getRecommendation()">Get Outfit Recommendation</button>
+
+</div>
+
+<div class="result">
+<h2 id="output"></h2>
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
